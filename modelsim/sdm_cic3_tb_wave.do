@@ -1,10 +1,10 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /sdm_cic3_tb/sine_input
+add wave -noupdate -format Analog-Step -height 84 -max 0.89999999993797697 -min -0.89999999999310853 /sdm_cic3_tb/sine_input
 add wave -noupdate /sdm_cic3_tb/modulator_out
 add wave -noupdate /sdm_cic3_tb/clk
 add wave -noupdate /sdm_cic3_tb/reset_n
-add wave -noupdate /sdm_cic3_tb/cic_out
+add wave -noupdate -format Analog-Step -height 84 -max 15943271.0 /sdm_cic3_tb/cic_out
 add wave -noupdate /sdm_cic3_tb/sine_wave/sine_out
 add wave -noupdate /sdm_cic3_tb/sine_wave/pi
 add wave -noupdate /sdm_cic3_tb/sine_wave/time_us
@@ -62,4 +62,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {24999646500 ps} {24999969030 ps}
+WaveRestoreZoom {0 ps} {26250 us}
