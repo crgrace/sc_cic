@@ -19,7 +19,6 @@ always #10 clk = ~clk; // 50Mhz
 initial begin
     clk = 0;
     reset_n = 0;
-    digital_monitor_sel = 0;
     #1000 reset_n = 1;
 
 end // initial
