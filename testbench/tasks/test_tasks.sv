@@ -66,8 +66,10 @@ begin
         end // assert
     end // for
     $display("%d tests complete. Total Errors = %d",NumTrials,errors);
+`ifdef __ICARUS__
     if (errors != 0) $stop(0);
     $finish(0);
+`endif
 end // begin
 endtask
     
