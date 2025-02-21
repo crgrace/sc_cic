@@ -1,10 +1,10 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -format Analog-Step -height 84 -max 0.89999999993797697 -min -0.89999999999310853 /sdm_cic3_tb/sine_input
+add wave -noupdate -format Analog-Step -height 84 -max 0.90000000000000002 -min -0.90000000000000002 /sdm_cic3_tb/sine_input
 add wave -noupdate /sdm_cic3_tb/modulator_out
 add wave -noupdate /sdm_cic3_tb/clk
 add wave -noupdate /sdm_cic3_tb/reset_n
-add wave -noupdate -format Analog-Step -height 84 -max 15943271.0 /sdm_cic3_tb/cic_out
+add wave -noupdate -format Analog-Step -height 84 -max 15943300.0 /sdm_cic3_tb/cic_out
 add wave -noupdate /sdm_cic3_tb/sine_wave/sine_out
 add wave -noupdate /sdm_cic3_tb/sine_wave/pi
 add wave -noupdate /sdm_cic3_tb/sine_wave/time_us
@@ -37,17 +37,9 @@ add wave -noupdate /sdm_cic3_tb/cic3/diff1_d
 add wave -noupdate /sdm_cic3_tb/cic3/diff2_d
 add wave -noupdate /sdm_cic3_tb/cic3/clock_counter
 add wave -noupdate /sdm_cic3_tb/cic3/divided_clk
-add wave -noupdate /math_pkg::cos/cos
-add wave -noupdate /math_pkg::cos/rTheta
-add wave -noupdate /math_pkg::sin/sin
-add wave -noupdate /math_pkg::sin/rTheta
-add wave -noupdate /math_pkg::log/log
-add wave -noupdate /math_pkg::log/rVal
-add wave -noupdate /math_pkg::log10/log10
-add wave -noupdate /math_pkg::log10/rVal
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {3940830000 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 502
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
