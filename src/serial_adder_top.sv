@@ -58,7 +58,7 @@ end
 // full adder
 always_comb begin
     {cout_temp, sum} = bit_a + bit_b + cin;
-    done <= load;
+    done = load;
 end
 
 serial_adder_shiftreg

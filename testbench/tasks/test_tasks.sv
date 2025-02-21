@@ -66,6 +66,8 @@ begin
         end // assert
     end // for
     $display("%d tests complete. Total Errors = %d",NumTrials,errors);
+    if (errors != 0) $stop(0);
+    $finish(0);
 end // begin
 endtask
     
