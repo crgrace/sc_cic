@@ -11,3 +11,8 @@ _*
 wave.do
 par*
 etch*
+*.fst
+*.vcd
+*.vvp
+sim_build/
+results.xml
