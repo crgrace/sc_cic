@@ -50,8 +50,9 @@ always_comb begin : coder
         in_coded = 0;
 end // always_comb
 
-
-assign divided_clk = clock_counter[CLOCK_WIDTH-1];
+always_comb begin : clock_assign
+    divided_clk = clock_counter[CLOCK_WIDTH-1]; 
+end // always_comb
 
 // integrators
 always_ff @ (posedge clk or negedge reset_n) begin : integrators 
