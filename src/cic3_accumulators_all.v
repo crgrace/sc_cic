@@ -98,7 +98,7 @@ module serial_adder_top (
 	);
 	initial _sv2v_0 = 0;
 endmodule
-module cic3_accumulators (
+module cic3_accumulators_all (
 	out,
 	divided_clk,
 	in,
